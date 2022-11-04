@@ -9,7 +9,6 @@ $(function () {
     $('.top__slider').slick({
         dots: true,
         arrows:false,
-        // fade: true,
         autoplay: true
     })
     $('.contact-slider').slick({
@@ -17,7 +16,12 @@ $(function () {
         slidesToScroll: 10,
         dots: true,
         arrows:false,
-        // autoplay:true,
+
+    })
+    $('.article-slider__box').slick({
+        fade:true,
+        prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrowleft"><img src="img/arrow-slide-left.svg"></button>',
+        nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src="img/arrow-slide-right.svg"></button>',
 
     })
 
